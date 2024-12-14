@@ -11,9 +11,11 @@ Enermy::Enermy(
     unsigned char LDR_PIN, 
     unsigned char MOTOR_PIN1, 
     unsigned char MOTOR_PIN2, 
-    unsigned char MOTOR_PIN3
+    unsigned char MOTOR_PIN3,
+    unsigned char SERVO_PIN
     ):LDR_PIN(LDR_PIN), MOTOR_PIN1(MOTOR_PIN1), MOTOR_PIN2(MOTOR_PIN2), MOTOR_PIN3(MOTOR_PIN3){
     
+    servo.attach(SERVO_PIN);
     pinMode(LDR_PIN, INPUT);
     pinMode(MOTOR_PIN1, OUTPUT);
     pinMode(MOTOR_PIN2, OUTPUT);
@@ -46,6 +48,14 @@ void Enermy::motor_direct(short direction){
             // The direction is invalid
             break;
     }
+}
+
+void Enermy::kill(){
+    servo.write(90);
+}
+
+void Enermy::recovery(){
+    servo.write(180);
 }
 #line 1 "c:\\Users\\Kevin\\Desktop\\ES_final\\final.ino"
 void setup()

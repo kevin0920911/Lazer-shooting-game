@@ -48,5 +48,5 @@ void Enermy::kill(){
 }
 
 void Enermy::recovery(){
-    servo.write(0);
+    servo.write(180);
 }
