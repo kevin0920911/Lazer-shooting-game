@@ -3,7 +3,7 @@
 
 
 #include <Arduino.h>
-#include <ESP32_Servo.h>
+#include <ESP32Servo.h>
 
 class Fort{
 private:
@@ -20,8 +20,7 @@ public:
     /*
     * Turns the servo to the left or right
     */
-    void turn_left();
-    void turn_right();
+    void turn(int);
     /*
     * Shoots the lazer if the cooldown time has passed
     * Return can shoot or not

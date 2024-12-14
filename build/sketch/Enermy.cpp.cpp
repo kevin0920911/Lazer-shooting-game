@@ -1,7 +1,7 @@
 #include <Arduino.h>
-#line 1 "c:\\Users\\Kevin\\Desktop\\ES_final\\final.ino"
+#line 5 "c:\\Users\\Kevin\\Desktop\\ES_final\\final.ino"
 void setup();
-#line 6 "c:\\Users\\Kevin\\Desktop\\ES_final\\final.ino"
+#line 8 "c:\\Users\\Kevin\\Desktop\\ES_final\\final.ino"
 void loop();
 #line 0 "c:\\Users\\Kevin\\Desktop\\ES_final\\final.ino"
 #line 1 "c:\\Users\\Kevin\\Desktop\\ES_final\\Enermy.cpp"
@@ -26,7 +26,8 @@ Enermy::~Enermy(){}
 
 bool Enermy::is_shooted(){
     int LDR_value = analogRead(LDR_PIN);
-    return LDR_value > Threshold;
+    printf("LDR value: %d\n", LDR_value);
+    return LDR_value >= Threshold;
 }
 
 void Enermy::motor_direct(short direction){
@@ -51,20 +52,26 @@ void Enermy::motor_direct(short direction){
 }
 
 void Enermy::kill(){
-    servo.write(90);
+    servo.write(180);
 }
 
 void Enermy::recovery(){
-    servo.write(180);
+    servo.write(90);
 }
 #line 1 "c:\\Users\\Kevin\\Desktop\\ES_final\\final.ino"
-void setup()
-{
-	
-}
+#include "Enermy.h"
 
-void loop()
-{
-	
-}
+Enermy enermy(35, 0, 0, 0, 33);
+int last_shoot_time = 0;
+void setup(){
 
+}
+void loop(){
+    if (enermy.is_shooted()){
+        enermy.kill();
+        last_shoot_time = millis();
+    }
+    if (millis() - last_shoot_time >= 1000){
+        enermy.recovery();
+    }
+}

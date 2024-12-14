@@ -14,19 +14,10 @@ Fort::Fort(
 
 Fort::~Fort(){servo.detach();}
 
-void Fort::turn_left(){
-    int serv_angle = servo.read();
-    if (serv_angle >= 5){
-        servo.write(serv_angle-5);
-    }
+void Fort::turn(int angle){
+    servo.write(angle);
 }
 
-void Fort::turn_right(){
-    int serv_angle = servo.read();
-    if (serv_angle <= 175){
-        servo.write(serv_angle+5);
-    }
-}
 
 bool Fort::shoot(){
     unsigned long int current_time = millis();

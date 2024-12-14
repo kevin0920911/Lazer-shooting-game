@@ -132,4 +132,6 @@ c:\Users\Kevin\Desktop\ES_final\build\sketch\Fort.cpp.o: \
  C:\Users\Kevin\AppData\Local\Arduino15\packages\esp32\hardware\esp32\1.0.5/tools/sdk/include/spi_flash/esp_partition.h \
  C:\Users\Kevin\AppData\Local\Arduino15\packages\esp32\hardware\esp32\1.0.5/tools/sdk/include/spi_flash/esp_spi_flash.h \
  C:\Users\Kevin\AppData\Local\Arduino15\packages\esp32\hardware\esp32\1.0.5\variants\node32s/pins_arduino.h \
- C:\Arduino\libraries\ESP32Servo-master\src/ESP32_Servo.h
+ C:\Arduino\libraries\ESP32Servo\src/ESP32Servo.h \
+ C:\Arduino\libraries\ESP32Servo\src/ESP32PWM.h \
+ C:\Users\Kevin\AppData\Local\Arduino15\packages\esp32\hardware\esp32\1.0.5\cores\esp32/esp32-hal-ledc.h

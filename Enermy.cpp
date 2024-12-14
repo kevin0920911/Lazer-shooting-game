@@ -13,13 +13,17 @@ Enermy::Enermy(
     pinMode(MOTOR_PIN1, OUTPUT);
     pinMode(MOTOR_PIN2, OUTPUT);
     pinMode(MOTOR_PIN3, OUTPUT);
+    last_shoot_time = 0;
+    last_turn_state = false;
+    last_turn_time = 0;
 }
 
 Enermy::~Enermy(){}
 
 bool Enermy::is_shooted(){
     int LDR_value = analogRead(LDR_PIN);
-    return LDR_value > Threshold;
+    printf("LDR value: %d\n", LDR_value);
+    return LDR_value >= Threshold;
 }
 
 void Enermy::motor_direct(short direction){
@@ -44,9 +48,9 @@ void Enermy::motor_direct(short direction){
 }
 
 void Enermy::kill(){
-    servo.write(90);
+    servo.write(180);
 }
 
 void Enermy::recovery(){
-    servo.write(180);
+    servo.write(90);
 }

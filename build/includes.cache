@@ -11,8 +11,8 @@
   },
   {
     "Sourcefile": "c:\\Users\\Kevin\\Desktop\\ES_final\\build\\sketch\\Enermy.cpp.cpp",
-    "Include": "ESP32_Servo.h",
-    "Includepath": "C:\\Arduino\\libraries\\ESP32Servo-master\\src"
+    "Include": "ESP32Servo.h",
+    "Includepath": "C:\\Arduino\\libraries\\ESP32Servo\\src"
   },
   {
     "Sourcefile": "c:\\Users\\Kevin\\Desktop\\ES_final\\build\\sketch\\Enermy.cpp.cpp",
@@ -30,7 +30,12 @@
     "Includepath": null
   },
   {
-    "Sourcefile": "C:\\Arduino\\libraries\\ESP32Servo-master\\src\\ESP32_Servo.cpp",
+    "Sourcefile": "C:\\Arduino\\libraries\\ESP32Servo\\src\\ESP32PWM.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Arduino\\libraries\\ESP32Servo\\src\\ESP32Servo.cpp",
     "Include": "",
     "Includepath": null
   }

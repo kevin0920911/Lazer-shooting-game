@@ -1,6 +1,6 @@
 c:\Users\Kevin\Desktop\ES_final\build\sketch\Switch.cpp.o: \
  c:\Users\Kevin\Desktop\ES_final\build\sketch\Switch.cpp \
- c:\Users\Kevin\Desktop\ES_final\build\sketch\switch.h \
+ c:\Users\Kevin\Desktop\ES_final\build\sketch\Switch.h \
  C:\Users\Kevin\AppData\Local\Arduino15\packages\esp32\hardware\esp32\1.0.5\cores\esp32/Arduino.h \
  C:\Users\Kevin\AppData\Local\Arduino15\packages\esp32\hardware\esp32\1.0.5/tools/sdk/include/newlib/stdint.h \
  C:\Users\Kevin\AppData\Local\Arduino15\packages\esp32\hardware\esp32\1.0.5/tools/sdk/include/newlib/machine/_default_types.h \
