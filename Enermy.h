@@ -17,12 +17,13 @@ private:
     unsigned char MOTOR_PIN3;
     Servo servo;
 public:
-    Enermy(unsigned char, unsigned char, unsigned char, unsigned char);
+    Enermy(unsigned char, unsigned char, unsigned char, unsigned char, unsigned char);
     ~Enermy();
 public:
     void motor_direct(short);
     bool is_shooted();
     void kill();
+    void recovery();
 };
 
 #endif
