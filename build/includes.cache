@@ -2,70 +2,70 @@
   {
     "Sourcefile": null,
     "Include": "",
-    "Includepath": "C:\\Users\\Kevin\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\1.0.5\\cores\\esp32"
+    "Includepath": "C:\\Users\\j8100\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.0.4\\cores\\esp32"
   },
   {
     "Sourcefile": null,
     "Include": "",
-    "Includepath": "C:\\Users\\Kevin\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\1.0.5\\variants\\node32s"
+    "Includepath": "C:\\Users\\j8100\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.0.4\\variants\\node32s"
   },
   {
-    "Sourcefile": "c:\\Users\\Kevin\\Desktop\\ES_final\\build\\sketch\\Enermy.cpp.cpp",
+    "Sourcefile": "c:\\Users\\j8100\\Downloads\\新增資料夾\\ES-final\\build\\sketch\\Enermy.cpp.cpp",
     "Include": "ESP32Servo.h",
-    "Includepath": "C:\\Arduino\\libraries\\ESP32Servo\\src"
+    "Includepath": "C:\\Users\\j8100\\OneDrive\\文件\\Arduino\\libraries\\ESP32Servo\\src"
   },
   {
-    "Sourcefile": "c:\\Users\\Kevin\\Desktop\\ES_final\\build\\sketch\\Enermy.cpp.cpp",
+    "Sourcefile": "c:\\Users\\j8100\\Downloads\\新增資料夾\\ES-final\\build\\sketch\\Enermy.cpp.cpp",
     "Include": "DFRobotDFPlayerMini.h",
-    "Includepath": "C:\\Arduino\\libraries\\DFRobotDFPlayerMini"
+    "Includepath": "C:\\Users\\j8100\\OneDrive\\文件\\Arduino\\libraries\\DFRobotDFPlayerMini"
   },
   {
-    "Sourcefile": "c:\\Users\\Kevin\\Desktop\\ES_final\\build\\sketch\\Enermy.cpp.cpp",
+    "Sourcefile": "c:\\Users\\j8100\\Downloads\\新增資料夾\\ES-final\\build\\sketch\\Enermy.cpp.cpp",
     "Include": "LiquidCrystal_I2C.h",
-    "Includepath": "C:\\Arduino\\libraries\\LiquidCrystal_I2C-master"
+    "Includepath": "C:\\Users\\j8100\\OneDrive\\文件\\Arduino\\libraries\\LiquidCrystal_I2C"
   },
   {
-    "Sourcefile": "c:\\Users\\Kevin\\Desktop\\ES_final\\build\\sketch\\Enermy.cpp.cpp",
+    "Sourcefile": "c:\\Users\\j8100\\Downloads\\新增資料夾\\ES-final\\build\\sketch\\Enermy.cpp.cpp",
     "Include": "Wire.h",
-    "Includepath": "C:\\Users\\Kevin\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\1.0.5\\libraries\\Wire\\src"
+    "Includepath": "C:\\Users\\j8100\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.0.4\\libraries\\Wire\\src"
   },
   {
-    "Sourcefile": "c:\\Users\\Kevin\\Desktop\\ES_final\\build\\sketch\\Enermy.cpp.cpp",
+    "Sourcefile": "c:\\Users\\j8100\\Downloads\\新增資料夾\\ES-final\\build\\sketch\\Enermy.cpp.cpp",
     "Include": "",
     "Includepath": null
   },
   {
-    "Sourcefile": "c:\\Users\\Kevin\\Desktop\\ES_final\\build\\sketch\\Fort.cpp",
+    "Sourcefile": "c:\\Users\\j8100\\Downloads\\新增資料夾\\ES-final\\build\\sketch\\Fort.cpp",
     "Include": "",
     "Includepath": null
   },
   {
-    "Sourcefile": "c:\\Users\\Kevin\\Desktop\\ES_final\\build\\sketch\\Switch.cpp",
+    "Sourcefile": "c:\\Users\\j8100\\Downloads\\新增資料夾\\ES-final\\build\\sketch\\Switch.cpp",
     "Include": "",
     "Includepath": null
   },
   {
-    "Sourcefile": "C:\\Arduino\\libraries\\ESP32Servo\\src\\ESP32PWM.cpp",
+    "Sourcefile": "C:\\Users\\j8100\\OneDrive\\文件\\Arduino\\libraries\\ESP32Servo\\src\\ESP32PWM.cpp",
     "Include": "",
     "Includepath": null
   },
   {
-    "Sourcefile": "C:\\Arduino\\libraries\\ESP32Servo\\src\\ESP32Servo.cpp",
+    "Sourcefile": "C:\\Users\\j8100\\OneDrive\\文件\\Arduino\\libraries\\ESP32Servo\\src\\ESP32Servo.cpp",
     "Include": "",
     "Includepath": null
   },
   {
-    "Sourcefile": "C:\\Arduino\\libraries\\DFRobotDFPlayerMini\\DFRobotDFPlayerMini.cpp",
+    "Sourcefile": "C:\\Users\\j8100\\OneDrive\\文件\\Arduino\\libraries\\DFRobotDFPlayerMini\\DFRobotDFPlayerMini.cpp",
     "Include": "",
     "Includepath": null
   },
   {
-    "Sourcefile": "C:\\Arduino\\libraries\\LiquidCrystal_I2C-master\\LiquidCrystal_I2C.cpp",
+    "Sourcefile": "C:\\Users\\j8100\\OneDrive\\文件\\Arduino\\libraries\\LiquidCrystal_I2C\\LiquidCrystal_I2C.cpp",
     "Include": "",
     "Includepath": null
   },
   {
-    "Sourcefile": "C:\\Users\\Kevin\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\1.0.5\\libraries\\Wire\\src\\Wire.cpp",
+    "Sourcefile": "C:\\Users\\j8100\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.0.4\\libraries\\Wire\\src\\Wire.cpp",
     "Include": "",
     "Includepath": null
   }

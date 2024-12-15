@@ -1,4 +1,4 @@
-#line 1 "c:\\Users\\Kevin\\Desktop\\ES_final\\Switch.h"
+#line 1 "c:\\Users\\j8100\\Downloads\\新增資料夾\\ES-final\\Switch.h"
 /*
 檢測開關被「按一下」和「長按」的行為
 作者：小趙

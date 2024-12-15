@@ -1,18 +1,18 @@
 #include <Arduino.h>
-#line 43 "c:\\Users\\Kevin\\Desktop\\ES_final\\final.ino"
+#line 43 "c:\\Users\\j8100\\Downloads\\新增資料夾\\ES-final\\final.ino"
 void setup();
-#line 58 "c:\\Users\\Kevin\\Desktop\\ES_final\\final.ino"
+#line 58 "c:\\Users\\j8100\\Downloads\\新增資料夾\\ES-final\\final.ino"
 void loop();
-#line 67 "c:\\Users\\Kevin\\Desktop\\ES_final\\final.ino"
+#line 67 "c:\\Users\\j8100\\Downloads\\新增資料夾\\ES-final\\final.ino"
 void emermies_behaviour();
-#line 88 "c:\\Users\\Kevin\\Desktop\\ES_final\\final.ino"
+#line 88 "c:\\Users\\j8100\\Downloads\\新增資料夾\\ES-final\\final.ino"
 void MP3_setup();
-#line 104 "c:\\Users\\Kevin\\Desktop\\ES_final\\final.ino"
+#line 104 "c:\\Users\\j8100\\Downloads\\新增資料夾\\ES-final\\final.ino"
 void fort_behaviour();
-#line 116 "c:\\Users\\Kevin\\Desktop\\ES_final\\final.ino"
+#line 116 "c:\\Users\\j8100\\Downloads\\新增資料夾\\ES-final\\final.ino"
 void game_task();
-#line 0 "c:\\Users\\Kevin\\Desktop\\ES_final\\final.ino"
-#line 1 "c:\\Users\\Kevin\\Desktop\\ES_final\\Enermy.cpp"
+#line 0 "c:\\Users\\j8100\\Downloads\\新增資料夾\\ES-final\\final.ino"
+#line 1 "c:\\Users\\j8100\\Downloads\\新增資料夾\\ES-final\\Enermy.cpp"
 #include "Enermy.h"
 
 Enermy::Enermy(
@@ -81,7 +81,7 @@ void Enermy::recovery(){
     is_deaded = false;
     servo.write(90);
 }
-#line 1 "c:\\Users\\Kevin\\Desktop\\ES_final\\final.ino"
+#line 1 "c:\\Users\\j8100\\Downloads\\新增資料夾\\ES-final\\final.ino"
 #include <Arduino.h>
 #include "Enermy.h"
 #include "Fort.h"
@@ -98,7 +98,7 @@ LiquidCrystal_I2C lcd(0x27, 16, 2);
 HardwareSerial mySerial(1);
 DFRobotDFPlayerMini myDFPlayer;
 Enermy enermy[2] = { Enermy(36, 25, 26, 27, 2, 1000), Enermy(14, 5, 18, 33, 4, 3800) };
-Fort fort(32, 19, 1000);
+Fort fort(32, 19, 500);
 Switch buttom(12, HIGH, true);
 
 long int lcd_last_update_time = 0;

@@ -1,4 +1,4 @@
-#line 1 "c:\\Users\\Kevin\\Desktop\\ES_final\\Enermy.h"
+#line 1 "c:\\Users\\j8100\\Downloads\\新增資料夾\\ES-final\\Enermy.h"
 #ifndef ENERMY_H
 #define ENERMY_H
 

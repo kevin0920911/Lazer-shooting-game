@@ -1,5 +1,5 @@
-# 1 "c:\\Users\\Kevin\\Desktop\\ES_final\\Enermy.cpp"
-# 2 "c:\\Users\\Kevin\\Desktop\\ES_final\\Enermy.cpp" 2
+# 1 "c:\\Users\\j8100\\Downloads\\新增資料夾\\ES-final\\Enermy.cpp"
+# 2 "c:\\Users\\j8100\\Downloads\\新增資料夾\\ES-final\\Enermy.cpp" 2
 
 Enermy::Enermy(
     short int LDR_PIN,
@@ -18,9 +18,9 @@ Enermy::Enermy(
 
     servo.attach(SERVO_PIN);
     pinMode(LDR_PIN, 0x01);
-    pinMode(MOTOR_PIN1, 0x02);
-    pinMode(MOTOR_PIN2, 0x02);
-    pinMode(MOTOR_PIN3, 0x02);
+    pinMode(MOTOR_PIN1, 0x03);
+    pinMode(MOTOR_PIN2, 0x03);
+    pinMode(MOTOR_PIN3, 0x03);
     is_deaded = false;
     last_shoot_time = 0;
     last_turn_state = 1;
@@ -67,24 +67,24 @@ void Enermy::recovery(){
     is_deaded = false;
     servo.write(90);
 }
-# 1 "c:\\Users\\Kevin\\Desktop\\ES_final\\final.ino"
-# 2 "c:\\Users\\Kevin\\Desktop\\ES_final\\final.ino" 2
-# 3 "c:\\Users\\Kevin\\Desktop\\ES_final\\final.ino" 2
-# 4 "c:\\Users\\Kevin\\Desktop\\ES_final\\final.ino" 2
-# 5 "c:\\Users\\Kevin\\Desktop\\ES_final\\final.ino" 2
-# 6 "c:\\Users\\Kevin\\Desktop\\ES_final\\final.ino" 2
-# 7 "c:\\Users\\Kevin\\Desktop\\ES_final\\final.ino" 2
-# 8 "c:\\Users\\Kevin\\Desktop\\ES_final\\final.ino" 2
+# 1 "c:\\Users\\j8100\\Downloads\\新增資料夾\\ES-final\\final.ino"
+# 2 "c:\\Users\\j8100\\Downloads\\新增資料夾\\ES-final\\final.ino" 2
+# 3 "c:\\Users\\j8100\\Downloads\\新增資料夾\\ES-final\\final.ino" 2
+# 4 "c:\\Users\\j8100\\Downloads\\新增資料夾\\ES-final\\final.ino" 2
+# 5 "c:\\Users\\j8100\\Downloads\\新增資料夾\\ES-final\\final.ino" 2
+# 6 "c:\\Users\\j8100\\Downloads\\新增資料夾\\ES-final\\final.ino" 2
+# 7 "c:\\Users\\j8100\\Downloads\\新增資料夾\\ES-final\\final.ino" 2
+# 8 "c:\\Users\\j8100\\Downloads\\新增資料夾\\ES-final\\final.ino" 2
 
 LiquidCrystal_I2C lcd(0x27, 16, 2);
 
 //TODO: Define the pin number
-#define VR_PIN 34
+
 
 HardwareSerial mySerial(1);
 DFRobotDFPlayerMini myDFPlayer;
 Enermy enermy[2] = { Enermy(36, 25, 26, 27, 2, 1000), Enermy(14, 5, 18, 33, 4, 3800) };
-Fort fort(32, 19, 1000);
+Fort fort(32, 19, 500);
 Switch buttom(12, 0x1, true);
 
 long int lcd_last_update_time = 0;
@@ -101,7 +101,7 @@ long int lcd_last_update_time = 0;
 * 4. The VR pin number: 34
 
 */
-# 29 "c:\\Users\\Kevin\\Desktop\\ES_final\\final.ino"
+# 29 "c:\\Users\\j8100\\Downloads\\新增資料夾\\ES-final\\final.ino"
 int score = 0;
 
 /*
@@ -127,9 +127,9 @@ void fort_behaviour(){
 }
 
 */
-# 43 "c:\\Users\\Kevin\\Desktop\\ES_final\\final.ino"
+# 43 "c:\\Users\\j8100\\Downloads\\新增資料夾\\ES-final\\final.ino"
 void setup(){
-    Serial.begin(115200);
+    Serial0.begin(115200);
     lcd.init();
     lcd.backlight();
     lcd.clear();
@@ -174,13 +174,13 @@ void emermies_behaviour(){
 }
 
 void MP3_setup(){
-    mySerial.begin(9600, 0x800001c, 17, 16);
+    mySerial.begin(9600, SERIAL_8N1, 17, 16);
 
     while (!myDFPlayer.begin(mySerial)) {
-        Serial.println(((reinterpret_cast<const __FlashStringHelper *>(("Unable to begin")))));
+        Serial0.println(((reinterpret_cast<const __FlashStringHelper *>(("Unable to begin")))));
         delay(1000);
     }
-    Serial.println(((reinterpret_cast<const __FlashStringHelper *>(("DFPlayer Mini online.")))));
+    Serial0.println(((reinterpret_cast<const __FlashStringHelper *>(("DFPlayer Mini online.")))));
     myDFPlayer.volume(20);
 
     /* 
@@ -192,7 +192,7 @@ void MP3_setup(){
     myDFPlayer.stop();
 
     */
-# 103 "c:\\Users\\Kevin\\Desktop\\ES_final\\final.ino"
+# 103 "c:\\Users\\j8100\\Downloads\\新增資料夾\\ES-final\\final.ino"
 }
 void fort_behaviour(){
     int angle = map(analogRead(34), 0, 4095, 10, 160);
