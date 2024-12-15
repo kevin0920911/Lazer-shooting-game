@@ -16,6 +16,7 @@ Fort::~Fort(){servo.detach();}
 
 void Fort::turn(int angle){
     servo.write(angle);
+    
 }
 
 

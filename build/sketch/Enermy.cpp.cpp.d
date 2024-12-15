@@ -134,4 +134,12 @@ c:\Users\Kevin\Desktop\ES_final\build\sketch\Enermy.cpp.cpp.o: \
  c:\Users\Kevin\Desktop\ES_final\build\sketch\Enermy.h \
  C:\Arduino\libraries\ESP32Servo\src/ESP32Servo.h \
  C:\Arduino\libraries\ESP32Servo\src/ESP32PWM.h \
- C:\Users\Kevin\AppData\Local\Arduino15\packages\esp32\hardware\esp32\1.0.5\cores\esp32/esp32-hal-ledc.h
+ C:\Users\Kevin\AppData\Local\Arduino15\packages\esp32\hardware\esp32\1.0.5\cores\esp32/esp32-hal-ledc.h \
+ c:\Users\Kevin\Desktop\ES_final\build\sketch\Fort.h \
+ c:\Users\Kevin\Desktop\ES_final\build\sketch\Switch.h \
+ C:\Arduino\libraries\DFRobotDFPlayerMini/DFRobotDFPlayerMini.h \
+ C:\Arduino\libraries\LiquidCrystal_I2C-master/LiquidCrystal_I2C.h \
+ C:\Users\Kevin\AppData\Local\Arduino15\packages\esp32\hardware\esp32\1.0.5\cores\esp32/Print.h \
+ C:\Users\Kevin\AppData\Local\Arduino15\packages\esp32\hardware\esp32\1.0.5\libraries\Wire\src/Wire.h \
+ C:\Users\Kevin\AppData\Local\Arduino15\packages\esp32\hardware\esp32\1.0.5\cores\esp32/esp32-hal.h \
+ C:\Users\Kevin\AppData\Local\Arduino15\packages\esp32\hardware\esp32\1.0.5/tools/sdk/include/freertos/freertos/queue.h
