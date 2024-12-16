@@ -15,6 +15,7 @@ Enermy::Enermy(
     this->MOTOR_PIN3 = MOTOR_PIN3;
     this -> Threshold = Threshold;
 
+
     servo.attach(SERVO_PIN);
     pinMode(LDR_PIN, INPUT);
     pinMode(MOTOR_PIN1, OUTPUT);
@@ -30,9 +31,7 @@ Enermy::~Enermy(){}
 
 bool Enermy::is_shooted(){
     int LDR_value = analogRead(LDR_PIN);
-    if (Threshold == 3900){
-        printf("%d\n", LDR_value);
-    }
+    printf("LDR value: %d\n", LDR_value);
     return LDR_value >= Threshold && !is_deaded;
 }
 

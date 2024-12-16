@@ -4,7 +4,7 @@ Fort::Fort(
     unsigned char lazer_pin, 
     unsigned char servo_pin, 
     unsigned int CD):
-    FORT_LAZER_PIN(lazer_pin), FORT_SERVO_PIN(servo_pin), CD(CD), last_shoot_time(0){
+    FORT_LAZER_PIN(lazer_pin), FORT_SERVO_PIN(servo_pin), CD(CD) ,last_shoot_time(0){
 
     pinMode(FORT_LAZER_PIN, OUTPUT);
     servo.attach(FORT_SERVO_PIN);
@@ -14,8 +14,9 @@ Fort::Fort(
 Fort::~Fort(){servo.detach();}
 
 void Fort::turn(int angle){
+    servo.attach(FORT_SERVO_PIN);
     servo.write(angle);
-    
+    servo.detach();
 }
 
 
