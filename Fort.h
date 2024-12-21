@@ -6,9 +6,9 @@
 #include <ESP32Servo.h>
 
 class Fort{
-private:
+public:
     unsigned long int last_shoot_time;
-private:
+public:
     unsigned char FORT_LAZER_PIN;
     unsigned char FORT_SERVO_PIN;
     unsigned int CD;

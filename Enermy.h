@@ -8,7 +8,7 @@
 // The threshold value for the LDR sensor
 // The value need to modify!!
 // Remember 1K ohm resistor is used
-#define MOVE_TIME 7000
+#define MOVE_TIME 4500
 #define RECOVERY_TIME 1000
 class Enermy
 {

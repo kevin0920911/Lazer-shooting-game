@@ -62,6 +62,6 @@ void Enermy::kill(){
 }
 
 void Enermy::recovery(){
-    is_deaded = false;
     servo.write(90);
+    is_deaded = false;
 }

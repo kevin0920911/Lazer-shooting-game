@@ -14,9 +14,7 @@ Fort::Fort(
 Fort::~Fort(){servo.detach();}
 
 void Fort::turn(int angle){
-    servo.attach(FORT_SERVO_PIN);
     servo.write(angle);
-    servo.detach();
 }
 
 
@@ -24,9 +22,9 @@ bool Fort::shoot(){
     unsigned long int current_time = millis();
     if (current_time - last_shoot_time >= CD){
         last_shoot_time = current_time;
-        digitalWrite(FORT_LAZER_PIN, HIGH);
-        vTaskDelay(500 / portTICK_PERIOD_MS);
         digitalWrite(FORT_LAZER_PIN, LOW);
+        vTaskDelay(500 / portTICK_PERIOD_MS);
+        digitalWrite(FORT_LAZER_PIN, HIGH);
         return true;
     }
     return false;
