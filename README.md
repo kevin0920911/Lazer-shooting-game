@@ -21,16 +21,16 @@
 
 ### 敵人控制
 - Method
-    - motor_direct(): 控制敵人移動方向
-    - is_shooted()：回傳敵人是否被射擊
-    - kill()：敵人被射擊後需判斷
-    - recovery()：恢復敵人，回到起立
+    - `motor_direct()`: 控制敵人移動方向
+    - `is_shooted()`：回傳敵人是否被射擊
+    - `kill()`：敵人被射擊後需判斷
+    - `recovery()`：恢復敵人，回到起立
 - 成員
-    - last_shoot_time：記錄上一次被射擊的時間
-    - last_turn_state：記錄上一次方向
-    - last_turn_time：記錄上一次轉方向的時間
-    - Threshold：記錄光敏電阻的臨界值
-    - Threshold：記錄光敏電阻的臨界值
+    - `last_shoot_time`：記錄上一次被射擊的時間
+    - `last_turn_state`：記錄上一次方向
+    - `last_turn_time`：記錄上一次轉方向的時間
+    - `Threshold`：記錄光敏電阻的臨界值
+    - `Threshold`：記錄光敏電阻的臨界值
 - 遊戲控制
     - 敵人控制迴圈邏輯
         1. 判斷敵人是否被射擊
